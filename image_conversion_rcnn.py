@@ -18,10 +18,9 @@ class RCNN(object):
         self.parameters = []
         self.create_placeholders()
         self.build_model()
-        self.create_loss_function()
+        #self.create_loss_function()
         self.create_optim()
         self.print_vars()
-        #self.print_accuracy_loss_function()
         
         
     def conv2d(self,x,W,padding='VALID',strides=[1,1,1,1]):
