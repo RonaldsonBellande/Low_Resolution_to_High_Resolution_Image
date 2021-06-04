@@ -1,7 +1,6 @@
 from tensorflow.python.keras.layers import Add, BatchNormalization, Conv2D, Dense, Flatten, Input, LeakyReLU, PReLU, Lambda
 from tensorflow.python.keras.models import Model
 from tensorflow.python.keras.applications.vgg19 import VGG19
-
 from model.common import pixel_shuffle, normalize_01, normalize_m11, denormalize_m11
 
 LR_SIZE = 24
