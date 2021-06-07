@@ -20,3 +20,5 @@ weights_dir = f'weights/edsr-{depth}-x{scale}'
 weights_file = os.path.join(weights_dir, 'weights.h5')
 
 os.makedirs(weights_dir, exist_ok=True)
+
+div2k_train = DIV2K(scale=scale, subset='train', downgrade=downgrade)

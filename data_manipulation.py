@@ -1,4 +1,5 @@
 import numpy as np
+import os
 import matplotlib.pyplot as plt
 from tensorflow.python.data.experimental import AUTOTUNE
 from PIL import Image
@@ -22,12 +23,7 @@ def plot_sample(lr, sr):
 
 
 class DIV2K:
-    def __init__(self,
-                 scale=2,
-                 subset='train',
-                 downgrade='bicubic',
-                 images_dir='.div2k/images',
-                 caches_dir='.div2k/caches'):
+    def __init__(self, scale=2, subset='train', downgrade='bicubic', images_dir='.div2k/images', caches_dir='.div2k/caches'):
 
         self._ntire_2018 = True
 
