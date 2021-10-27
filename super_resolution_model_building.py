@@ -48,8 +48,6 @@ class super_resolution_building(object):
         self.create_model_type = model_type
 
 
-
-
         # Numpy array
         self.image_file = np.array(self.image_file)
         self.label_name = np.array(self.label_name)
